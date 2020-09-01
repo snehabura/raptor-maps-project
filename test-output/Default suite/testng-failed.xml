@@ -5,9 +5,9 @@
     <classes>
       <class name="com.sample.tests.JobBoardTest">
         <methods>
-          <include name="setup"/>
-          <include name="jobValidation"/>
+          <include name="qaJobValidation"/>
           <include name="tearDown"/>
+          <include name="setup"/>
         </methods>
       </class> <!-- com.sample.tests.JobBoardTest -->
     </classes>

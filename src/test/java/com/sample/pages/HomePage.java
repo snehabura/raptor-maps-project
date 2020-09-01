@@ -20,7 +20,6 @@ public class HomePage {
 	public HomePage(WebDriver driver) {
 		this.driver = driver;
 		PageFactory.initElements(driver, this); // check why do we use this
-		
 	}
 
 	public boolean isCookieAlertDisplayed() {

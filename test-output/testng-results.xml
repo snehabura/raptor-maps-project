@@ -1,21 +1,29 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
+<testng-results ignored="0" total="2" passed="2" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2020-08-28T18:44:40 MDT" name="Default suite" finished-at="2020-08-28T18:44:59 MDT" duration-ms="19537">
+  <suite started-at="2020-08-31T22:16:28 MDT" name="Default suite" finished-at="2020-08-31T22:17:03 MDT" duration-ms="35201">
     <groups>
     </groups>
-    <test started-at="2020-08-28T18:44:40 MDT" name="Default test" finished-at="2020-08-28T18:44:59 MDT" duration-ms="19537">
+    <test started-at="2020-08-31T22:16:28 MDT" name="Default test" finished-at="2020-08-31T22:17:03 MDT" duration-ms="35201">
       <class name="com.sample.tests.JobBoardTest">
-        <test-method is-config="true" signature="setup()[pri:0, instance:com.sample.tests.JobBoardTest@4b168fa9]" started-at="2020-08-28T18:44:40 MDT" name="setup" finished-at="2020-08-28T18:44:50 MDT" duration-ms="10061" status="PASS">
+        <test-method is-config="true" signature="setup()[pri:0, instance:com.sample.tests.JobBoardTest@4b168fa9]" started-at="2020-08-31T22:16:28 MDT" name="setup" finished-at="2020-08-31T22:16:38 MDT" duration-ms="9717" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method signature="jobValidation()[pri:0, instance:com.sample.tests.JobBoardTest@4b168fa9]" started-at="2020-08-28T18:44:50 MDT" name="jobValidation" finished-at="2020-08-28T18:44:58 MDT" duration-ms="8835" status="PASS">
+        <test-method signature="qaJobValidation()[pri:0, instance:com.sample.tests.JobBoardTest@4b168fa9]" started-at="2020-08-31T22:16:38 MDT" name="qaJobValidation" finished-at="2020-08-31T22:16:46 MDT" duration-ms="8741" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- jobValidation -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.sample.tests.JobBoardTest@4b168fa9]" started-at="2020-08-28T18:44:58 MDT" name="tearDown" finished-at="2020-08-28T18:44:59 MDT" duration-ms="604" status="PASS">
+        </test-method> <!-- qaJobValidation -->
+        <test-method is-config="true" signature="setup()[pri:0, instance:com.sample.tests.JobBoardTest@4b168fa9]" started-at="2020-08-31T22:16:46 MDT" name="setup" finished-at="2020-08-31T22:16:54 MDT" duration-ms="7539" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="astronautJobSearch()[pri:1, instance:com.sample.tests.JobBoardTest@4b168fa9]" started-at="2020-08-31T22:16:54 MDT" name="astronautJobSearch" finished-at="2020-08-31T22:17:03 MDT" duration-ms="8634" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- astronautJobSearch -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.sample.tests.JobBoardTest@4b168fa9]" started-at="2020-08-31T22:17:03 MDT" name="tearDown" finished-at="2020-08-31T22:17:03 MDT" duration-ms="539" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
