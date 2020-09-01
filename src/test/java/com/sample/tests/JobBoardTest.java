@@ -29,13 +29,13 @@ public class JobBoardTest extends BaseClass {
 
 	}
 
-	@Test(priority = 0)
+	@Test(priority = 0, description="Validate if QA Job is available in job board")
 	public void qualityAssuranceSpecialistJobValidation() throws InterruptedException {
 		assertTrue(jobBoard.findQaTitle());
 		log.info("Quality Assurance Specialist Job found");
 	}
 
-	@Test(priority = 1, dependsOnMethods = { "qualityAssuranceSpecialistJobValidation" })
+	@Test(priority = 1, dependsOnMethods = { "qualityAssuranceSpecialistJobValidation" }, description="If qa job is available in job board, validate its job description")
 	public void qualityAssuranceSpecialistJobDescriptionValidation() throws InterruptedException {
 		JavascriptExecutor je = (JavascriptExecutor) driver;
 		if (jobBoard.findQaTitle()) {
@@ -49,7 +49,7 @@ public class JobBoardTest extends BaseClass {
 
 	}
 
-	@Test(priority = 2)
+	@Test(priority = 2, description="Validate if Astronaut Job is available in job board")
 	public void astronautJobValidation() throws InterruptedException {
 		assertFalse(jobBoard.findAstronautTitle());
 		log.info("There is no Astronaut job posting.");

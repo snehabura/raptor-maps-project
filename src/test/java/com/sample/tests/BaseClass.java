@@ -15,7 +15,7 @@ public class BaseClass {
 	HomePage homePage;
 	JobBoard jobBoard;
 
-	@BeforeSuite()
+	@BeforeSuite(description="Set up and start firefox driver")
 	public void setup() {
 		System.setProperty("webdriver.gecko.driver", driverPath);
 		driver = new FirefoxDriver();
@@ -25,7 +25,7 @@ public class BaseClass {
 		jobBoard = new JobBoard(driver);
 	}
 	
-	@AfterSuite()
+	@AfterSuite(description="Close driver")
 	public void tearDown() {
 		driver.close();
 	}
